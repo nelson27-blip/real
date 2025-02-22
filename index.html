@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Major">
+        <nav>
+           <h1><span>Beaut</span>iful</h1>
+            <ul>
+                <li><a href="">lastest</a></li>
+                <li><a href="">Morden</a></li>
+                <li><a href="">Contemporary</a></li>
+                <li><a href="">Affordable</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+        </nav>
+
+        <div class="lamp">
+            <img src="image/light.jpg" class="light">
+            <img src="image/main.webp" class="main" id="main">
+        </div>
+
+        <div class="text-container">
+            <h2 class="write">Love form beauty <br>when felt </h2>
+            <p>The heart lights up like the bulb when with the right person. And intends to stay up when the person is around</p>
+            <a href="">Check if they are the right ones</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.getElementById("btn");
+        var main = document.getElementById("main");
+
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            main.classList.toggle("on");
+        }
+    </script>
+</body>
+</html>
